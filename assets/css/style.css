@@ -50,11 +50,15 @@
     background-color:#cccc00aa;
 }
 
-.ui-menu-color-contact {
+.ui-menu-color-contact, .bg-color-contact {
     background-color:#3498db;
 }
 
-.bg-color-django {
+.about_me-icons_contact {
+    color:#3498db;
+}
+
+.bg-color-django, .center-form-container {
     background-color:#3498dbaa;
 }
 
@@ -73,7 +77,7 @@
 /*~~~~~~~~~~~~~~~~~~~~ Special Paddings/Margins/Text */
 
 h1, h2, h3, h4 {
-    margin: 0:
+    margin: 0;
 }
 
 .uppercase {
@@ -216,6 +220,13 @@ dl, ol, ul {
     float: left;
 }
 
+@media (max-width: 768px) {
+    .col-sm-1ths {
+        width: 100%;
+        float: left;
+    }
+}
+
 @media (min-width: 768px) {
     .col-sm-5ths {
         width: 20%;
@@ -306,6 +317,8 @@ footer {
 
 /*~~~~~~~~~~~~~~~~~~~~ Personal Info Start */
 
+/*--- This section also styles the Contact section on the Contact Page */
+
 .col-md-4, .bg-color-personal {
     color: white;
 }
@@ -354,8 +367,12 @@ footer {
 
 /*~~~~~~~~~~~~~~~~~~~~ Work History */
 
+.history-items {
+    margin-bottom: 30px;
+}
+
 .timeline-item {
-    padding: 4em 2em, 0em 2em;
+    padding: 4em 2em 0em 2em;
     position: relative;
     border-left: 1px solid #fafafa;
 }
@@ -390,10 +407,6 @@ footer {
     background: #fafafa;
 }
 
-.history-items {
-    margin-bottom: 30px;
-}
-
 /*~~~~~~~~~~~~~~~~~~~~ My Skills Start */
 
 .progress-section {
@@ -417,6 +430,41 @@ footer {
 }
 
 /*==================== Resume Page End */
+
+.center-form-container {
+    width: 85%;
+    padding: 2%;
+    border: solid 1px #676767;
+    margin: 0 auto;
+    border-radius: 2%;
+}
+
+@media (max-width: 768px) {
+    .center-form-container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .center-form-container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .center-form-container {
+        width: 60%;
+    }
+}
+
+.center-form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.center-form .btn-secondary {
+    margin: 8px 0;
+}
 
 
 /*======================================== Section Start */
